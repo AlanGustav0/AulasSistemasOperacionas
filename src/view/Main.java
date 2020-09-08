@@ -6,7 +6,7 @@ import controller.RedesController;
 
 public class Main {
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
 
 		// Instancia de classe Scanner
 		Scanner sc = new Scanner(System.in);
@@ -22,8 +22,9 @@ public class Main {
 
 			System.out.println(
 					"Escolha a opção desejada: \n 1 - Configurações do Sistema Operacional \n 2 - Média de PING" + "\n"
-							+ "3 - Finalizar Programa");
+							+ "9 - Finalizar Programa");
 			opc = sc.nextInt();
+			
 
 			switch (opc) {
 
@@ -35,17 +36,18 @@ public class Main {
 				redes.ping(redes.identificaSO());
 				break;
 
-			case 3:
+			case 9:
 
 				System.out.println("Processo Finalizado. Até logo! ");
-				opc = sc.nextInt();
 				break;
+				
 
 			default:
 				System.out.println("Opção Inválida!");
 				break;
 
 			}
+			
 
 		}
 
