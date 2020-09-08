@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 
 public class RedesController {
 
+	//Definindo o construtor da classe
 	public RedesController() {
 		super();
 	}
