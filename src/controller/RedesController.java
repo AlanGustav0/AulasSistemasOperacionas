@@ -19,6 +19,13 @@ public class RedesController {
 	 * Ethernet e o IPv4 apenas (Não importa o número de adaptadores ethernet, devem
 	 * aparecer todos). Os adaptadores que não tiverem IPv4 não devem ser mostrados.
 	 */
+	
+public String identificaSO() {
+		
+		String os = System.getProperty("os.name");
+		
+		return os;
+	}
 
 	public String ip(String sO) {
 
@@ -26,7 +33,7 @@ public class RedesController {
 		String ipconfig = " ";
 
 		// Condição que verifica se o sistema informado é "windows"
-		if (sO.toLowerCase().trim().equals("windows")) {
+		if (sO.contains("Windows")) {
 			// Utilizamos o try catch para fazer o tratamento de exceções, evitando estouro
 			// de memória.
 			try {
@@ -84,7 +91,7 @@ public class RedesController {
 			}
 
 			// Condição que verifica se o sistema informado é "linux"
-		} else if (sO.toLowerCase().trim().equals("linux")) {
+		} else if ((sO.contains("Linux"))) {
 
 			// Utilizamos o try catch para fazer o tratamento de exceções, evitando estouro
 			// de memória.
@@ -168,7 +175,7 @@ public class RedesController {
 		String mensagem = " ";
 
 		// Condição que verifica se o sistema informado é "windows"
-		if (sO.toLowerCase().trim().equals("windows") && System.getProperty("os.name").contains("Windows")) {
+		if ((sO.contains("Windows"))) {
 			// Utilizamos o try catch para fazer o tratamento de exceções, evitando estouro
 			// de memória.
 			try {
@@ -241,7 +248,7 @@ public class RedesController {
 				}
 
 			}
-		} else if (sO.toLowerCase().trim().equals("linux") && System.getProperty("os.name").contains("Linux")) {
+		} else if ((sO.contains("Linux"))) {
 			// Utilizamos o try catch para fazer o tratamento de exceções, evitando estouro
 			// de memória.
 			try {

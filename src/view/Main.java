@@ -28,17 +28,11 @@ public class Main {
 			switch (opc) {
 
 			case 1:
-				sc.nextLine();
-				System.out.print("Por favor, insira o nome do Sistema Operacional: ");
-				sO = sc.nextLine();
-				System.out.println(redes.ip(sO));
+				System.out.println(redes.ip(redes.identificaSO()));
 				break;
 
 			case 2:
-				sc.nextLine();
-				System.out.print("Por favor, insira o nome do Sistema Operacional: ");
-				sO = sc.nextLine();
-				redes.ping(sO);
+				redes.ping(redes.identificaSO());
 				break;
 
 			case 3:
