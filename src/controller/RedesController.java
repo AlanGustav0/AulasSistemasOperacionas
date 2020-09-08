@@ -247,7 +247,7 @@ public class RedesController {
 
 				// A variável processo receberá os dados do PING e traz apenas 10 iterações (-n
 				// 10) do sistema.
-				Process processo = Runtime.getRuntime().exec("PING -c 10 www.google.com.br");
+				Process processo = Runtime.getRuntime().exec("ping -c 10 www.google.com.br");
 
 				// A variável "fluxo" receberá o fluxo de bit atrvés da função getInputStream()
 				InputStream fluxo = processo.getInputStream();
