@@ -22,7 +22,7 @@ public class Main {
 
 			System.out.println(
 					"Escolha a opção desejada: \n 1 - Configurações do Sistema Operacional \n 2 - Média de PING" + "\n"
-							+ "9 - Finalizar Programa");
+							+ " 9 - Finalizar Programa");
 			opc = sc.nextInt();
 			
 
