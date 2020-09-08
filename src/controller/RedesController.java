@@ -261,7 +261,7 @@ public class RedesController {
 
 				// Escrevendo uma linha na variável "linha"
 				String linha = buffer.readLine();
-				System.out.println(linha);
+				System.out.println();
 
 				System.out.println("Aguarde, o sistema está processando as informações...");
 				
